@@ -1,311 +1,378 @@
-
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>D&amp;M - Su Tesisatı Hizmetleri</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-<script>
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            primary: "#0D47A1", // A deep blue color
-            'background-light': '#F9FAFB',
-            'background-dark': '#0a192f',
-          },
-          fontFamily: {
-            display: ['Poppins', 'sans-serif'],
-          },
-          borderRadius: {
-            'DEFAULT': '0.5rem',
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D&amp;M - Su Tesisatı Hizmetleri</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#0d47a1",
+              "background-light": "#f9fafb",
+              "background-dark": "#0a192f",
+            },
+            fontFamily: {
+              display: ["Poppins", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.75rem",
+            },
           },
         },
-      },
-    };
-  </script>
-<style>
-    .gradient-text {
-      background: linear-gradient(90deg, #38BDF8, #A78BFA);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-  </style>
-</head>
-<body class="font-display bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-200">
-<div class="bg-[#1e3a8a]">
-<div class="border-b border-gray-700/50">
-<div class="container mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex flex-wrap justify-between items-center py-2 text-sm text-gray-400">
-<div class="flex items-center space-x-6">
-<div class="flex items-center space-x-2">
-<span class="material-icons text-base">location_on</span>
-<span>İstanbul Bağcılar Demirkapı Mahallesi 1732 Sokak No:19/A</span>
-</div>
-<div class="flex items-center space-x-2">
-<span class="material-icons text-base">email</span>
-<span>dmtesisat@gmail.com</span>
-</div>
-</div>
-<div class="flex items-center space-x-4 mt-2 sm:mt-0">
-<a class="hover:text-white" href="#"><svg aria-hidden="true" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z"></path></svg></a>
-<a class="hover:text-white" href="#"><svg aria-hidden="true" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12Z" fill-rule="evenodd"></path></svg></a>
-<a class="hover:text-white" href="#"><svg aria-hidden="true" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.398 1.363.444 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.046 1.064-.207 1.791-.444 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.398-2.427.444-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.046-1.791-.207-2.427-.444a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.398-1.363-.444-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.046-1.064.207-1.791.444-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.08 2.525c.636-.247 1.363-.398 2.427-.444C9.531 2.013 9.885 2 12.315 2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 8a3 3 0 110-6 3 3 0 010 6zm6.406-11.845a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z" fill-rule="evenodd"></path></svg></a>
-<a class="hover:text-white" href="#"><svg aria-hidden="true" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.03.25c-6.63 0-12 5.37-12 12s5.37 12 12 12 12-5.37 12-12-5.37-12-12-12zm-1.16 18.29l-4.24-4.24 1.41-1.41 2.83 2.83 6.36-6.36 1.41 1.41-7.77 7.77z"></path></svg></a>
-<a class="hover:text-white" href="#"><svg aria-hidden="true" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.78 22 12 22 12s0 3.22-.42 4.814a2.502 2.502 0 01-1.768 1.768C18.219 19 12 19 12 19s-6.219 0-7.812-1.418a2.502 2.502 0 01-1.768-1.768C2 15.22 2 12 2 12s0-3.22.42-4.814a2.502 2.502 0 011.768-1.768C5.781 5 12 5 12 5s6.219 0 7.812.418ZM15.197 12L10 9v6l5.197-3z" fill-rule="evenodd"></path></svg></a>
-<a class="hover:text-white" href="#"><svg aria-hidden="true" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.5 7H7v10h1.5V7zm4.5 0h-3v10h3c2.48 0 4.5-2.02 4.5-4.5S15.48 7 13 7zm-1.5 1.5h1.5c1.65 0 3 1.35 3 3s-1.35 3-3 3H11.5V8.5z"></path></svg></a>
-</div>
-</div>
-</div>
-</div>
-<header class="py-4">
-<div class="container mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex justify-between items-center">
-<a class="text-3xl font-bold text-white" href="#">
-          D&amp;M
-        </a>
-<nav class="hidden md:flex items-center space-x-8 text-white">
-<a class="hover:text-cyan-400 border-b-2 border-cyan-400 pb-1" href="#">Anasayfa</a>
-<a class="hover:text-cyan-400" href="#">Kurumsal</a>
-<a class="hover:text-cyan-400" href="#">Hizmetler</a>
-<a class="hover:text-cyan-400" href="#">S.S.S</a>
-<a class="hover:text-cyan-400" href="#">Medya</a>
-<a class="hover:text-cyan-400" href="#">İletişim</a>
-</nav>
-        <div class="flex items-center space-x-3">
-          <div class="bg-cyan-500 rounded-full p-3">
-            <span class="material-icons text-white">call</span>
-          </div>
-          <div>
-            <a href="tel:+905398168013" class="font-bold text-lg text-white transition hover:text-cyan-300">
-              +90 539 816 80 13
+      };
+    </script>
+    <style>
+      .gradient-text {
+        background: linear-gradient(90deg, #38bdf8, #a78bfa);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    </style>
+  </head>
+  <body class="font-display bg-background-light text-slate-700">
+    <div class="bg-[#0d1f4c] text-slate-200">
+      <div class="border-b border-white/10">
+        <div class="container mx-auto flex flex-wrap items-center justify-between gap-4 px-4 py-3 text-sm">
+          <div class="flex flex-wrap items-center gap-6">
+            <div class="flex items-center gap-2">
+              <span class="material-icons text-base text-cyan-300">location_on</span>
+              <span>İstanbul Bağcılar Demirkapı Mahallesi 1732 Sokak No:19/A</span>
+            </div>
+            <a class="flex items-center gap-2 hover:text-white" href="mailto:dmtesisat@gmail.com">
+              <span class="material-icons text-base text-cyan-300">mail</span>
+              <span>dmtesisat@gmail.com</span>
             </a>
-            <p class="text-sm text-gray-400">Müşteri Hizmetleri</p>
           </div>
-        </div>
-</div>
-</div>
-</header>
-<div class="relative overflow-hidden">
-<div class="absolute inset-0 bg-black opacity-50"></div>
-<img alt="Technician working on pipes" class="absolute inset-0 w-full h-full object-cover opacity-20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDl_0JZ0WooAwr9pDxcy-hvnFFQRu8lO7GOFsk1UQTAZrlH7uu28YRdYya7Nu4WzPjpX6ITtuPSFIasHY60tVhTsUfxyzydMmjP9IKw_rlT-io_KG1AC9AzFkWTp6oftHb9dU1Tgt-wLR_Me4GKbUWWVCowybe-6pvxP-w_11Feclx_ma8kneK1uR35_3OScexsPgjOCpidaPWxHebwof3jecwB0O4uWBK8ERJiJjcVyhVL6_6Sn9gBOKqoabZIbPJBZWftil8jwl4R"/>
-<div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20 md:py-32">
-<div class="grid md:grid-cols-2 gap-8 items-center">
-<div>
-<h1 class="text-6xl md:text-7xl font-bold text-white tracking-tight">
-            SU KAÇAĞI <span class="gradient-text">TESPİTİ</span>
-</h1>
-</div>
-<div class="text-center md:text-left text-white">
-<h2 class="text-4xl font-bold uppercase tracking-widest">İleri Teknoloji</h2>
-<h2 class="text-4xl font-bold uppercase tracking-widest mt-2">Cihazlarla</h2>
-<h2 class="text-5xl font-bold uppercase tracking-widest mt-2 relative inline-block">
-            KIRMADAN
-            <span class="absolute h-1 w-20 bg-cyan-400 bottom-0 left-1/2 -translate-x-1/2 translate-y-4"></span>
-</h2>
-<h2 class="text-4xl font-bold uppercase tracking-widest mt-8">Su Kaçağı Tespiti</h2>
-<p class="mt-12 text-lg text-gray-300">
-            İSTANBUL'UN TÜM İLÇELERİNE FİYAT FARKI OLMADAN SERVİS HİZMETİ
-          </p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="fixed bottom-4 right-4 flex flex-col space-y-3 z-50">
-<a class="bg-blue-600 text-white rounded-full p-4 shadow-lg hover:bg-blue-700 transition duration-300" href="tel:+905398168013" aria-label="Hemen ara">
-<span class="material-icons">call</span>
-</a>
-<a class="bg-green-500 text-white rounded-full p-4 shadow-lg hover:bg-green-600 transition duration-300" href="https://wa.me/905398168013" aria-label="WhatsApp ile iletişime geç">
-<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M16.75 13.96c.25.13.41.36.44.62l.27 2.36c.03.26-.04.53-.21.73s-.41.32-.67.32c-.08 0-.17-.01-.25-.03l-2.48-.62c-1.02-.26-2.09-.1-3.02.43l-1.46.81c-2.31 1.28-5.04.5-6.82-1.28-1.78-1.78-2.56-4.51-1.28-6.82l.81-1.46c.53-.93.69-2 .43-3.02l-.62-2.48c-.1-.4-.01-.83.24-1.12s.66-.46 1.08-.44l2.36.27c.26.03.49.19.62.44s.19.53.07.78l-.75 1.5c-.13.26-.04.57.19.72l3.4 2.26c.23.15.54.06.7-.19l1.5-.75c.25-.12.55-.07.78.07l2.26 3.4c.15.23.06.54-.19.7z"></path></svg>
-</a>
-</div>
-<main class="py-16 md:py-24">
-  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="mx-auto max-w-3xl text-center">
-      <p class="text-primary font-semibold uppercase tracking-[0.4em]">HİZMETLERİMİZ</p>
-      <h2 class="mt-3 text-4xl font-bold text-gray-900 dark:text-white md:text-5xl">Profesyonel Çözümlerimiz</h2>
-      <p class="mt-5 text-base leading-relaxed text-gray-600 dark:text-gray-300">
-        Petek temizliğinden kapsamlı su tesisatı projelerine kadar tüm ihtiyaçlarınızda yanınızdayız. Uzman ekiplerimiz ve gelişmiş
-        ekipmanlarımızla kalıcı çözümler üretir, hızlı servis için <a href="tel:+905398168013" class="font-semibold text-primary transition hover:text-cyan-500">+90 539 816 80 13</a> numarasından
-        dilediğiniz an bize ulaşabilirsiniz.
-      </p>
-    </div>
-    <div class="mt-16 grid gap-10 sm:grid-cols-2 xl:grid-cols-4">
-      <article class="group flex flex-col overflow-hidden rounded-3xl bg-white/90 shadow-xl shadow-blue-900/10 ring-1 ring-slate-100 transition duration-300 hover:-translate-y-1 hover:shadow-2xl dark:bg-slate-900 dark:ring-slate-800">
-        <div class="relative h-52 overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Petek temizliği yapan usta" class="h-full w-full object-cover transition duration-500 group-hover:scale-105"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-slate-900/0 opacity-0 transition duration-500 group-hover:opacity-100"></div>
-        </div>
-        <div class="flex flex-1 flex-col p-6">
-          <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Petek Temizliği</h3>
-          <p class="mt-3 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
-            Kimyasal ve makineli petek temizliği ile ısınma performansını artırıyor, tortu ve çamuru sistemden arındırarak yakıt tasarrufu sağlıyoruz.
-          </p>
-          <div class="mt-6 border-t border-slate-100 pt-4 dark:border-slate-700">
-            <a href="tel:+905398168013" class="inline-flex items-center text-sm font-semibold text-primary transition hover:text-cyan-500">
-              <span class="material-icons mr-2 text-base">phone_in_talk</span>
-              +90 539 816 80 13
+          <div class="flex items-center gap-4">
+            <a class="flex items-center gap-2 hover:text-white" href="#" aria-label="Instagram">
+              <span class="material-icons text-base text-cyan-300">photo_camera</span>
+              <span>Instagram</span>
+            </a>
+            <a class="flex items-center gap-2 hover:text-white" href="#" aria-label="Facebook">
+              <span class="material-icons text-base text-cyan-300">public</span>
+              <span>Facebook</span>
+            </a>
+            <a class="flex items-center gap-2 hover:text-white" href="#" aria-label="YouTube">
+              <span class="material-icons text-base text-cyan-300">smart_display</span>
+              <span>YouTube</span>
             </a>
           </div>
         </div>
-      </article>
-      <article class="group flex flex-col overflow-hidden rounded-3xl bg-white/90 shadow-xl shadow-blue-900/10 ring-1 ring-slate-100 transition duration-300 hover:-translate-y-1 hover:shadow-2xl dark:bg-slate-900 dark:ring-slate-800">
-        <div class="relative h-52 overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1582719478148-dfdb1039670f?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Kombi montajı yapan teknik ekip" class="h-full w-full object-cover transition duration-500 group-hover:scale-105"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-slate-900/0 opacity-0 transition duration-500 group-hover:opacity-100"></div>
-        </div>
-        <div class="flex flex-1 flex-col p-6">
-          <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Kombi Montaj ve Petek Montajı</h3>
-          <p class="mt-3 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
-            Yetkili standartlara uygun kombi ve petek montajı ile güvenli ısınma çözümleri sunuyor, gaz ve su bağlantılarının tüm kontrollerini aynı gün tamamlıyoruz.
-          </p>
-          <div class="mt-6 border-t border-slate-100 pt-4 dark:border-slate-700">
-            <a href="tel:+905398168013" class="inline-flex items-center text-sm font-semibold text-primary transition hover:text-cyan-500">
-              <span class="material-icons mr-2 text-base">phone_in_talk</span>
-              +90 539 816 80 13
-            </a>
-          </div>
-        </div>
-      </article>
-      <article class="group flex flex-col overflow-hidden rounded-3xl bg-white/90 shadow-xl shadow-blue-900/10 ring-1 ring-slate-100 transition duration-300 hover:-translate-y-1 hover:shadow-2xl dark:bg-slate-900 dark:ring-slate-800">
-        <div class="relative h-52 overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1581579186989-4c04bf07ba1d?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Su tesisatı tamiratı yapan teknisyen" class="h-full w-full object-cover transition duration-500 group-hover:scale-105"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-slate-900/0 opacity-0 transition duration-500 group-hover:opacity-100"></div>
-        </div>
-        <div class="flex flex-1 flex-col p-6">
-          <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Su Tesisatı Tamiratı</h3>
-          <p class="mt-3 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
-            Termal kameralar ve akustik dinleme cihazları ile kaçakları tespit ediyor, kırmadan onarım yaparak yaşam alanlarınızı koruyoruz.
-          </p>
-          <div class="mt-6 border-t border-slate-100 pt-4 dark:border-slate-700">
-            <a href="tel:+905398168013" class="inline-flex items-center text-sm font-semibold text-primary transition hover:text-cyan-500">
-              <span class="material-icons mr-2 text-base">phone_in_talk</span>
-              +90 539 816 80 13
-            </a>
-          </div>
-        </div>
-      </article>
-      <article class="group flex flex-col overflow-hidden rounded-3xl bg-white/90 shadow-xl shadow-blue-900/10 ring-1 ring-slate-100 transition duration-300 hover:-translate-y-1 hover:shadow-2xl dark:bg-slate-900 dark:ring-slate-800">
-        <div class="relative h-52 overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1581092795360-fd1ca056c1bf?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Yeni boru hattı kurulumunu yapan ekip" class="h-full w-full object-cover transition duration-500 group-hover:scale-105"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-slate-900/0 opacity-0 transition duration-500 group-hover:opacity-100"></div>
-        </div>
-        <div class="flex flex-1 flex-col p-6">
-          <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Su Tesisatı Kurulumu</h3>
-          <p class="mt-3 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
-            Yeni bina ve tadilat projelerinde temiz su, atık su ve ısıtma hatlarını projeye uygun şekilde kurarak anahtar teslim çözümler üretiyoruz.
-          </p>
-          <div class="mt-6 border-t border-slate-100 pt-4 dark:border-slate-700">
-            <a href="tel:+905398168013" class="inline-flex items-center text-sm font-semibold text-primary transition hover:text-cyan-500">
-              <span class="material-icons mr-2 text-base">phone_in_talk</span>
-              +90 539 816 80 13
-            </a>
-          </div>
-        </div>
-      </article>
-    </div>
-    <div class="mt-16 rounded-3xl bg-gradient-to-r from-primary via-blue-800 to-blue-900 px-6 py-10 text-center text-white shadow-2xl shadow-blue-900/30">
-      <h3 class="text-2xl font-semibold md:text-3xl">7/24 Hizmetinizdeyiz</h3>
-      <p class="mt-3 text-sm leading-relaxed text-blue-100 md:text-base">
-        İstanbul'un tüm ilçelerinde aynı gün servis için çağrı bırakın, deneyimli ustalarımız en kısa sürede adresinize gelsin.
-      </p>
-      <div class="mt-6 flex flex-wrap justify-center gap-4">
-        <a href="tel:+905398168013" class="inline-flex items-center space-x-2 rounded-full bg-white/90 px-6 py-3 text-sm font-semibold text-primary transition hover:bg-white">
-          <span class="material-icons text-base">call</span>
-          <span>Hemen Ara</span>
-        </a>
-        <a href="https://wa.me/905398168013" class="inline-flex items-center space-x-2 rounded-full border border-white/40 px-6 py-3 text-sm font-semibold text-white transition hover:border-white">
-          <span class="material-icons text-base">chat_bubble</span>
-          <span>WhatsApp Destek</span>
-        </a>
       </div>
-    </div>
-  </div>
-</main>
-
-<footer class="bg-[#0b1f4b] text-gray-300">
-  <div class="border-t border-white/10 bg-[#10275f]">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div class="grid gap-10 lg:grid-cols-[1.2fr_1fr_1fr]">
-        <div>
-          <div class="flex items-center space-x-3">
-            <div class="bg-cyan-500/20 text-cyan-300 rounded-full p-3">
-              <span class="material-icons">water_drop</span>
+      <header class="pb-16">
+        <div class="container mx-auto flex flex-wrap items-center justify-between gap-6 px-4 py-6">
+          <a class="text-3xl font-semibold tracking-wide text-white" href="#">D&amp;M</a>
+          <nav class="hidden items-center gap-8 text-sm font-medium text-slate-200 md:flex">
+            <a class="border-b-2 border-cyan-400 pb-1 text-white" href="#">Anasayfa</a>
+            <a class="hover:text-white/80" href="#">Kurumsal</a>
+            <a class="hover:text-white/80" href="#">Hizmetler</a>
+            <a class="hover:text-white/80" href="#">S.S.S</a>
+            <a class="hover:text-white/80" href="#">Medya</a>
+            <a class="hover:text-white/80" href="#iletisim">İletişim</a>
+          </nav>
+          <div class="flex items-center gap-3 rounded-full bg-white/10 px-5 py-3 text-white backdrop-blur">
+            <div class="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-500">
+              <span class="material-icons">call</span>
             </div>
             <div>
-              <p class="text-sm uppercase tracking-[0.3em] text-cyan-300">D&amp;M Su Tesisatı</p>
-              <h3 class="text-2xl font-semibold text-white">Profesyonel Çözümler</h3>
+              <a class="text-lg font-semibold leading-tight" href="tel:+905398168013">+90 539 816 80 13</a>
+              <p class="text-xs text-slate-200/80">7/24 Müşteri Hizmetleri</p>
             </div>
           </div>
-          <p class="mt-4 text-sm text-gray-400 leading-relaxed">
-            Deneyimli ekibimizle İstanbul'un tüm ilçelerinde su kaçağı tespiti, tesisat bakım ve onarım hizmetlerini
-            aynı gün içinde sağlıyoruz. Kırmadan, dökmeden kalıcı çözümler sunuyoruz.
+        </div>
+        <section class="container mx-auto px-4">
+          <div class="relative overflow-hidden rounded-3xl bg-slate-900/30">
+            <img
+              class="absolute inset-0 h-full w-full object-cover"
+              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&amp;fit=crop&amp;w=1600&amp;q=80"
+              alt="Su tesisatı teknisyeni çalışma esnasında"
+            />
+            <div class="absolute inset-0 bg-gradient-to-r from-[#0d1f4c]/90 via-[#0d1f4c]/80 to-[#143d7a]/70"></div>
+            <div class="relative z-10 grid gap-10 px-6 py-16 md:grid-cols-[1.1fr_0.9fr] md:px-12 md:py-20">
+              <div class="space-y-6 text-white">
+                <p class="text-sm font-semibold uppercase tracking-[0.5em] text-cyan-200">Profesyonel Destek</p>
+                <h1 class="text-4xl font-bold leading-tight md:text-5xl">
+                  <span class="gradient-text">Su Kaçağı Tespiti</span> ve Tesisat Çözümleri
+                </h1>
+                <p class="text-base text-blue-100 md:text-lg">
+                  Kırmadan dökmeden cihazla su kaçağı tespiti, petek temizliği ve kombi montajı hizmetlerimizle İstanbul genelinde aynı gün servis sağlıyoruz.
+                </p>
+                <div class="flex flex-wrap items-center gap-4">
+                  <a
+                    class="inline-flex items-center gap-2 rounded-full bg-cyan-500 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-cyan-400"
+                    href="tel:+905398168013"
+                  >
+                    <span class="material-icons text-base">call</span>
+                    <span>Hemen Ara</span>
+                  </a>
+                  <a
+                    class="inline-flex items-center gap-2 rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:border-white"
+                    href="https://wa.me/905398168013"
+                  >
+                    <span class="material-icons text-base">chat</span>
+                    <span>WhatsApp</span>
+                  </a>
+                </div>
+              </div>
+              <div class="grid gap-5 text-sm text-blue-100 md:justify-items-end">
+                <div class="rounded-2xl bg-white/5 p-6 shadow-lg shadow-black/10 backdrop-blur">
+                  <p class="text-xs font-semibold uppercase tracking-[0.3em] text-cyan-200">Neden Biz?</p>
+                  <ul class="mt-3 space-y-2 text-sm leading-relaxed">
+                    <li class="flex items-start gap-2">
+                      <span class="material-icons text-base text-cyan-300">verified</span>
+                      <span>Sertifikalı ve deneyimli ustalarla garantili çözümler</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <span class="material-icons text-base text-cyan-300">speed</span>
+                      <span>İstanbul genelinde aynı gün servis imkanı</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <span class="material-icons text-base text-cyan-300">precision_manufacturing</span>
+                      <span>Son teknoloji cihazlarla kırmadan su kaçağı tespiti</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="rounded-2xl bg-white/10 p-6 text-white shadow-lg shadow-black/10 backdrop-blur">
+                  <p class="text-xs font-semibold uppercase tracking-[0.3em] text-cyan-200">İletişim</p>
+                  <p class="mt-3 text-lg font-semibold">+90 539 816 80 13</p>
+                  <p class="text-xs text-blue-100">7/24 Acil Destek Hattı</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </header>
+    </div>
+
+    <div class="fixed bottom-4 right-4 z-50 flex flex-col gap-3">
+      <a
+        class="flex h-14 w-14 items-center justify-center rounded-full bg-blue-600 text-white shadow-lg transition hover:bg-blue-500"
+        href="tel:+905398168013"
+        aria-label="Hemen ara"
+      >
+        <span class="material-icons">call</span>
+      </a>
+      <a
+        class="flex h-14 w-14 items-center justify-center rounded-full bg-green-500 text-white shadow-lg transition hover:bg-green-400"
+        href="https://wa.me/905398168013"
+        aria-label="WhatsApp ile iletişime geç"
+      >
+        <span class="material-icons">chat</span>
+      </a>
+    </div>
+
+    <main class="py-16 md:py-24">
+      <section class="container mx-auto px-4">
+        <div class="mx-auto max-w-3xl text-center">
+          <p class="text-sm font-semibold uppercase tracking-[0.4em] text-primary">Hizmetlerimiz</p>
+          <h2 class="mt-3 text-4xl font-bold text-slate-900 md:text-5xl">Profesyonel Çözümlerimiz</h2>
+          <p class="mt-5 text-base leading-relaxed text-slate-600">
+            Petek temizliğinden kapsamlı su tesisatı projelerine kadar tüm ihtiyaçlarınızda yanınızdayız. Uzman ekiplerimiz ve gelişmiş ekipmanlarımızla kalıcı çözümler üretir, hızlı servis için
+            <a class="font-semibold text-primary transition hover:text-cyan-600" href="tel:+905398168013">+90 539 816 80 13</a>
+            numarasından bize ulaşabilirsiniz.
           </p>
-          <div class="mt-6 flex flex-wrap gap-4">
-            <a href="tel:+905398168013" class="inline-flex items-center space-x-2 rounded-full bg-cyan-500 px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-cyan-500/30 transition hover:bg-cyan-400">
+        </div>
+        <div class="mt-16 grid gap-8 sm:grid-cols-2 xl:grid-cols-4">
+          <article class="group flex flex-col overflow-hidden rounded-3xl bg-white shadow-xl ring-1 ring-slate-100 transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
+            <figure class="relative h-52 overflow-hidden">
+              <img
+                class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                alt="Petek temizliği yapan usta"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
+            </figure>
+            <div class="flex flex-1 flex-col p-6">
+              <h3 class="text-xl font-semibold text-slate-900">Petek Temizliği</h3>
+              <p class="mt-3 text-sm leading-relaxed text-slate-600">
+                Kimyasal ve makineli petek temizliği ile ısınma performansını artırıyor, tortu ve çamuru sistemden arındırarak yakıt tasarrufu sağlıyoruz.
+              </p>
+              <div class="mt-6 border-t border-slate-200 pt-4">
+                <a class="inline-flex items-center gap-2 text-sm font-semibold text-primary transition hover:text-cyan-600" href="tel:+905398168013">
+                  <span class="material-icons text-base">phone_in_talk</span>
+                  <span>+90 539 816 80 13</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="group flex flex-col overflow-hidden rounded-3xl bg-white shadow-xl ring-1 ring-slate-100 transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
+            <figure class="relative h-52 overflow-hidden">
+              <img
+                class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                src="https://images.unsplash.com/photo-1582719478148-dfdb1039670f?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                alt="Kombi montajı yapan teknik ekip"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
+            </figure>
+            <div class="flex flex-1 flex-col p-6">
+              <h3 class="text-xl font-semibold text-slate-900">Kombi ve Petek Montajı</h3>
+              <p class="mt-3 text-sm leading-relaxed text-slate-600">
+                Yetkili standartlara uygun kombi ve petek montajı ile güvenli ısınma çözümleri sunuyor, gaz ve su bağlantılarının tüm kontrollerini aynı gün tamamlıyoruz.
+              </p>
+              <div class="mt-6 border-t border-slate-200 pt-4">
+                <a class="inline-flex items-center gap-2 text-sm font-semibold text-primary transition hover:text-cyan-600" href="tel:+905398168013">
+                  <span class="material-icons text-base">phone_in_talk</span>
+                  <span>+90 539 816 80 13</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="group flex flex-col overflow-hidden rounded-3xl bg-white shadow-xl ring-1 ring-slate-100 transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
+            <figure class="relative h-52 overflow-hidden">
+              <img
+                class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                src="https://images.unsplash.com/photo-1581579186989-4c04bf07ba1d?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                alt="Su tesisatı tamiratı yapan teknisyen"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
+            </figure>
+            <div class="flex flex-1 flex-col p-6">
+              <h3 class="text-xl font-semibold text-slate-900">Su Tesisatı Tamiratı</h3>
+              <p class="mt-3 text-sm leading-relaxed text-slate-600">
+                Termal kameralar ve akustik dinleme cihazları ile kaçakları tespit ediyor, kırmadan onarım yaparak yaşam alanlarınızı koruyoruz.
+              </p>
+              <div class="mt-6 border-t border-slate-200 pt-4">
+                <a class="inline-flex items-center gap-2 text-sm font-semibold text-primary transition hover:text-cyan-600" href="tel:+905398168013">
+                  <span class="material-icons text-base">phone_in_talk</span>
+                  <span>+90 539 816 80 13</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="group flex flex-col overflow-hidden rounded-3xl bg-white shadow-xl ring-1 ring-slate-100 transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
+            <figure class="relative h-52 overflow-hidden">
+              <img
+                class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                src="https://images.unsplash.com/photo-1581092795360-fd1ca056c1bf?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                alt="Yeni su tesisatı kuran ekip"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
+            </figure>
+            <div class="flex flex-1 flex-col p-6">
+              <h3 class="text-xl font-semibold text-slate-900">Su Tesisatı Kurulumu</h3>
+              <p class="mt-3 text-sm leading-relaxed text-slate-600">
+                Yeni bina ve tadilat projelerinde temiz su, atık su ve ısıtma hatlarını projeye uygun şekilde kurarak anahtar teslim çözümler üretiyoruz.
+              </p>
+              <div class="mt-6 border-t border-slate-200 pt-4">
+                <a class="inline-flex items-center gap-2 text-sm font-semibold text-primary transition hover:text-cyan-600" href="tel:+905398168013">
+                  <span class="material-icons text-base">phone_in_talk</span>
+                  <span>+90 539 816 80 13</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="container mx-auto px-4 pt-20">
+        <div class="rounded-3xl bg-gradient-to-r from-primary via-blue-800 to-blue-900 px-6 py-12 text-center text-white shadow-xl">
+          <h3 class="text-2xl font-semibold md:text-3xl">7/24 Hizmetinizdeyiz</h3>
+          <p class="mt-3 text-sm leading-relaxed text-blue-100 md:text-base">
+            İstanbul'un tüm ilçelerinde aynı gün servis için çağrı bırakın, deneyimli ustalarımız en kısa sürede adresinize gelsin.
+          </p>
+          <div class="mt-6 flex flex-wrap justify-center gap-4">
+            <a class="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-primary transition hover:bg-blue-50" href="tel:+905398168013">
               <span class="material-icons text-base">call</span>
               <span>Hemen Ara</span>
             </a>
-            <a href="#iletisim" class="inline-flex items-center space-x-2 rounded-full border border-white/20 px-5 py-2 text-sm font-semibold text-gray-200 transition hover:border-cyan-400 hover:text-white">
-              <span class="material-icons text-base">chat</span>
-              <span>Teklif Al</span>
+            <a class="inline-flex items-center gap-2 rounded-full border border-white/50 px-6 py-3 text-sm font-semibold text-white transition hover:border-white" href="https://wa.me/905398168013">
+              <span class="material-icons text-base">chat_bubble</span>
+              <span>WhatsApp Destek</span>
             </a>
           </div>
         </div>
-        <div>
-          <h4 class="text-lg font-semibold text-white">Hızlı Bağlantılar</h4>
-          <ul class="mt-4 space-y-3 text-sm">
-            <li><a class="flex items-center space-x-2 transition hover:text-white" href="#"><span class="material-icons text-base">chevron_right</span><span>Anasayfa</span></a></li>
-            <li><a class="flex items-center space-x-2 transition hover:text-white" href="#"><span class="material-icons text-base">chevron_right</span><span>Kurumsal</span></a></li>
-            <li><a class="flex items-center space-x-2 transition hover:text-white" href="#"><span class="material-icons text-base">chevron_right</span><span>Hizmetler</span></a></li>
-            <li><a class="flex items-center space-x-2 transition hover:text-white" href="#"><span class="material-icons text-base">chevron_right</span><span>S.S.S</span></a></li>
-            <li><a class="flex items-center space-x-2 transition hover:text-white" href="#"><span class="material-icons text-base">chevron_right</span><span>Medya</span></a></li>
-            <li><a class="flex items-center space-x-2 transition hover:text-white" href="#iletisim"><span class="material-icons text-base">chevron_right</span><span>İletişim</span></a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="text-lg font-semibold text-white">İletişim</h4>
-          <ul class="mt-4 space-y-4 text-sm">
-            <li class="flex items-start space-x-3">
-              <span class="material-icons text-base text-cyan-300">location_on</span>
-              <span>İstanbul Bağcılar Demirkapı Mahallesi<br/>1732 Sokak No:19/A</span>
-            </li>
-            <li class="flex items-start space-x-3">
-              <span class="material-icons text-base text-cyan-300">phone</span>
-              <span>+90 539 816 80 13</span>
-            </li>
-            <li class="flex items-start space-x-3">
-              <span class="material-icons text-base text-cyan-300">email</span>
-              <span>dmtesisat@gmail.com</span>
-            </li>
-            <li class="flex items-start space-x-3">
-              <span class="material-icons text-base text-cyan-300">schedule</span>
-              <span>7/24 acil destek hattı<br/>Planlı bakım için randevu alabilirsiniz.</span>
-            </li>
-          </ul>
-          <div class="mt-6 flex space-x-4">
-            <a class="hover:text-white" href="#" aria-label="Twitter"><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.301 4.301 0 001.88-2.37 8.59 8.59 0 01-2.72 1.04 4.28 4.28 0 00-7.38 2.92c0 .34.04.67.11.98-3.56-.18-6.73-1.89-8.84-4.48a4.25 4.25 0 00-.58 2.15 4.28 4.28 0 001.91 3.56 4.23 4.23 0 01-1.94-.53v.05c0 2.08 1.49 3.82 3.45 4.21a4.33 4.33 0 01-1.93.07 4.29 4.29 0 004 2.97A8.6 8.6 0 012 19.54a12.13 12.13 0 006.56 1.92c7.87 0 12.18-6.52 12.18-12.18 0-.19 0-.38-.01-.57A8.57 8.57 0 0022.46 6z"/></svg></a>
-            <a class="hover:text-white" href="#" aria-label="Facebook"><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12Z"/></svg></a>
-            <a class="hover:text-white" href="#" aria-label="Instagram"><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.398 1.363.444 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.046 1.064-.207 1.791-.444 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.398-2.427.444-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.046-1.791-.207-2.427-.444a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.398-1.363-.444-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.046-1.064.207-1.791.444-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.08 2.525c.636-.247 1.363-.398 2.427-.444C9.531 2.013 9.885 2 12.315 2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 8a3 3 0 110-6 3 3 0 010 6zm6.406-11.845a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z"/></svg></a>
-            <a class="hover:text-white" href="#" aria-label="YouTube"><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.78 22 12 22 12s0 3.22-.42 4.814a2.502 2.502 0 01-1.768 1.768C18.219 19 12 19 12 19s-6.219 0-7.812-1.418a2.502 2.502 0 01-1.768-1.768C2 15.22 2 12 2 12s0-3.22.42-4.814a2.502 2.502 0 011.768-1.768C5.781 5 12 5 12 5s6.219 0 7.812.418ZM15.197 12 10 9v6l5.197-3z"/></svg></a>
+      </section>
+    </main>
+
+    <footer class="bg-[#0b1f4b] text-slate-200">
+      <div class="border-t border-white/10">
+        <div class="container mx-auto grid gap-10 px-4 py-12 lg:grid-cols-[1.2fr_repeat(2,minmax(0,1fr))]">
+          <div class="space-y-4">
+            <div class="flex items-center gap-3">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-cyan-500/20 text-cyan-300">
+                <span class="material-icons">water_drop</span>
+              </div>
+              <div>
+                <p class="text-xs uppercase tracking-[0.3em] text-cyan-300">D&amp;M Su Tesisatı</p>
+                <h3 class="text-2xl font-semibold text-white">Profesyonel Çözümler</h3>
+              </div>
+            </div>
+            <p class="text-sm leading-relaxed text-slate-300">
+              Deneyimli ekibimizle İstanbul'un tüm ilçelerinde su kaçağı tespiti, tesisat bakım ve onarım hizmetlerini aynı gün içinde sağlıyoruz. Kırmadan, dökmeden kalıcı çözümler sunuyoruz.
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <a class="inline-flex items-center gap-2 rounded-full bg-cyan-500 px-5 py-2 text-sm font-semibold text-slate-900 transition hover:bg-cyan-400" href="tel:+905398168013">
+                <span class="material-icons text-base">call</span>
+                <span>Hemen Ara</span>
+              </a>
+              <a class="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-2 text-sm font-semibold text-white transition hover:border-cyan-400" href="mailto:dmtesisat@gmail.com">
+                <span class="material-icons text-base">mail</span>
+                <span>Teklif Al</span>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-semibold text-white">Hızlı Bağlantılar</h4>
+            <ul class="mt-4 space-y-3 text-sm">
+              <li><a class="flex items-center gap-2 transition hover:text-white" href="#"><span class="material-icons text-base">chevron_right</span><span>Anasayfa</span></a></li>
+              <li><a class="flex items-center gap-2 transition hover:text-white" href="#"><span class="material-icons text-base">chevron_right</span><span>Kurumsal</span></a></li>
+              <li><a class="flex items-center gap-2 transition hover:text-white" href="#"><span class="material-icons text-base">chevron_right</span><span>Hizmetler</span></a></li>
+              <li><a class="flex items-center gap-2 transition hover:text-white" href="#"><span class="material-icons text-base">chevron_right</span><span>S.S.S</span></a></li>
+              <li><a class="flex items-center gap-2 transition hover:text-white" href="#"><span class="material-icons text-base">chevron_right</span><span>Medya</span></a></li>
+              <li><a class="flex items-center gap-2 transition hover:text-white" href="#iletisim"><span class="material-icons text-base">chevron_right</span><span>İletişim</span></a></li>
+            </ul>
+          </div>
+
+          <div id="iletisim">
+            <h4 class="text-lg font-semibold text-white">İletişim</h4>
+            <ul class="mt-4 space-y-4 text-sm">
+              <li class="flex items-start gap-3">
+                <span class="material-icons text-base text-cyan-300">location_on</span>
+                <span>İstanbul Bağcılar Demirkapı Mahallesi<br />1732 Sokak No:19/A</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-icons text-base text-cyan-300">phone</span>
+                <a class="hover:text-white" href="tel:+905398168013">+90 539 816 80 13</a>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-icons text-base text-cyan-300">mail</span>
+                <a class="hover:text-white" href="mailto:dmtesisat@gmail.com">dmtesisat@gmail.com</a>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-icons text-base text-cyan-300">schedule</span>
+                <span>7/24 acil destek hattı<br />Planlı bakım için randevu alabilirsiniz.</span>
+              </li>
+            </ul>
+            <div class="mt-6 flex items-center gap-4 text-sm">
+              <a class="flex items-center gap-2 transition hover:text-white" href="#" aria-label="Instagram"><span class="material-icons text-base text-cyan-300">photo_camera</span><span>Instagram</span></a>
+              <a class="flex items-center gap-2 transition hover:text-white" href="#" aria-label="Facebook"><span class="material-icons text-base text-cyan-300">public</span><span>Facebook</span></a>
+              <a class="flex items-center gap-2 transition hover:text-white" href="#" aria-label="YouTube"><span class="material-icons text-base text-cyan-300">smart_display</span><span>YouTube</span></a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="border-t border-white/10 bg-[#0b1f4b]/90">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 text-xs text-gray-400 flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
-      <p>&copy; 2024 D&amp;M Su Tesisatı. Tüm hakları saklıdır.</p>
-      <p class="flex items-center space-x-2">
-        <span class="material-icons text-base text-cyan-300">verified</span>
-        <span>Garantili onarım ve şeffaf fiyat politikası.</span>
-      </p>
-    </div>
-  </div>
-</footer>
-
-</body></html>
+      <div class="border-t border-white/10 bg-[#0b1f4b]/95">
+        <div class="container mx-auto flex flex-col gap-2 px-4 py-4 text-xs text-slate-300 md:flex-row md:items-center md:justify-between">
+          <p>&copy; 2024 D&amp;M Su Tesisatı. Tüm hakları saklıdır.</p>
+          <p class="flex items-center gap-2">
+            <span class="material-icons text-base text-cyan-300">verified</span>
+            <span>Garantili onarım ve şeffaf fiyat politikası.</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
