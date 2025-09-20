@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">D&amp;M Tesisat Logosu</title>
+  <desc id="desc">Mavi daire içerisinde musluk ve anahtar ikonları ile D&amp;M Tesisat yazısı</desc>
+  <circle cx="256" cy="256" r="240" fill="#1e75bc" />
+  <g fill="#ffffff">
+    <path d="M186 128h140v40h-40v30h-60v-30h-40z" />
+    <path d="M128 236h152v-32h-22c-24.3 0-44-19.7-44-44v-20h46v18c0 11 9 20 20 20h88c11 0 20-9 20-20v-18h46v20c0 24.3-19.7 44-44 44h-22v32h74c37.5 0 68 30.5 68 68v48h-96c-17.7 0-32 14.3-32 32v36h-108v-36c0-17.7-14.3-32-32-32h-82z" />
+  </g>
+  <path d="M220 332c0 26-32 56-32 56s-32-30-32-56c0-20 14.3-34 32-34s32 14 32 34z" fill="#ffffff" />
+  <g fill="#ffffff" transform="translate(256 320)">
+    <g transform="rotate(-32)">
+      <rect x="-20" y="-96" width="40" height="192" rx="20" />
+      <path d="M0 -132c24 0 44 20 44 44c0 12-12 30-12 30h-64s-12-18-12-30c0-24 20-44 44-44z" />
+      <rect x="-48" y="64" width="96" height="32" rx="16" />
+    </g>
+    <g transform="rotate(34)">
+      <rect x="-16" y="-108" width="32" height="216" rx="16" />
+      <circle cx="0" cy="-128" r="28" />
+      <path d="M0 -160c26 0 48 22 48 48c0 10-6 22-6 22h-84c0-12-6-22-6-22c0-26 22-48 48-48z" />
+      <rect x="-44" y="76" width="88" height="32" rx="16" />
+    </g>
+  </g>
+  <text x="256" y="432" text-anchor="middle" font-family="'Poppins', 'Helvetica', 'Arial', sans-serif" font-weight="700" font-size="64" fill="#ffffff" letter-spacing="6">
+    D&amp;M TESISAT
+  </text>
+</svg>
