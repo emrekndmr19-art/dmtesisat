@@ -1,7 +1,5 @@
 # Logo dosyası
 
-Bu depoda `assets/dm-logo.jpg` dosyasını kendi logonuzla doldurabilirsiniz. Sayfalardaki `<picture>` etiketi önce bu JPG'yi yüklemeyi deniyor.
+Sayfaların üst kısmındaki logo doğrudan `assets/dm-logo.jpg` dosyasını kullanır. PR sürecinde ikili dosyaları (`.jpg`, `.png` vb.) gönderemediğimiz için bu repo üzerinde örnek bir görsel yer almıyor.
 
-> Not: PR sürecinde ikili dosya paylaşamadığımız için repoda `assets/dm-logo.svg` isminde metin tabanlı bir yedek bulunuyor. JPG yoksa bu SVG otomatik olarak gösterilir.
-
-Ortamımız ikili dosyaları (`.jpg`, `.png` vb.) PR'a eklemeyi desteklemediği için gerçek görsel repoya dahil edilmedi. Yayına alırken kendi `dm-logo.jpg` dosyanızı aynı adla yerleştirirseniz sitenin tamamında logonuz görünecektir.
+Yerelde geliştirme yaparken veya yayımlarken aynı ada sahip kendi logonuzu `assets` klasörüne kopyalarsanız tüm sayfalarda otomatik olarak gösterilecektir.
