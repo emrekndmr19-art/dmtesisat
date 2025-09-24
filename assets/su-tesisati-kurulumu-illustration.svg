@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1067" role="img" aria-labelledby="title desc">
+  <title id="title">Su tesisatı kurulumu illüstrasyonu</title>
+  <desc id="desc">Boru hatları ve plan çizgileriyle su tesisatı kurulumunu anlatan soyut görsel.</desc>
+  <defs>
+    <linearGradient id="kurulum-bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#091a2f" />
+      <stop offset="60%" stop-color="#123456" />
+      <stop offset="100%" stop-color="#166781" />
+    </linearGradient>
+    <linearGradient id="grid" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#1a7aa7" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#0f3d59" stop-opacity="0.2" />
+    </linearGradient>
+    <linearGradient id="pipe-main" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#4fe0ff" />
+      <stop offset="100%" stop-color="#2fc3ff" />
+    </linearGradient>
+    <linearGradient id="pipe-secondary" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#5dffbf" />
+      <stop offset="100%" stop-color="#1dd0a5" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1067" fill="url(#kurulum-bg)" />
+  <g opacity="0.25" stroke="url(#grid)" stroke-width="4">
+    <path d="M160 120h1280v780H160z" fill="none" />
+    <g stroke-dasharray="4 18">
+      <path d="M160 220h1280" />
+      <path d="M160 320h1280" />
+      <path d="M160 420h1280" />
+      <path d="M160 520h1280" />
+      <path d="M160 620h1280" />
+      <path d="M160 720h1280" />
+      <path d="M160 820h1280" />
+    </g>
+    <g stroke-dasharray="4 18">
+      <path d="M320 120v780" />
+      <path d="M480 120v780" />
+      <path d="M640 120v780" />
+      <path d="M800 120v780" />
+      <path d="M960 120v780" />
+      <path d="M1120 120v780" />
+      <path d="M1280 120v780" />
+      <path d="M1440 120v780" />
+    </g>
+  </g>
+  <g fill="none" stroke-width="26" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M240 300h360c90 0 120 60 120 120s30 120 120 120h280" stroke="url(#pipe-main)" />
+    <path d="M520 540c80 0 120 40 120 120s56 120 132 120h368" stroke="url(#pipe-secondary)" />
+    <path d="M640 360v-80c0-60 40-110 120-110h280" stroke="url(#pipe-main)" />
+    <path d="M1120 620v160c0 70 42 120 120 120h160" stroke="url(#pipe-secondary)" />
+  </g>
+  <g fill="#0f2d45" opacity="0.7">
+    <circle cx="600" cy="300" r="44" />
+    <circle cx="880" cy="420" r="36" />
+    <circle cx="1180" cy="540" r="40" />
+    <circle cx="1360" cy="740" r="34" />
+  </g>
+  <g fill="#5dffbf" opacity="0.7">
+    <circle cx="600" cy="300" r="22" />
+    <circle cx="880" cy="420" r="18" />
+    <circle cx="1180" cy="540" r="20" />
+    <circle cx="1360" cy="740" r="18" />
+  </g>
+  <g transform="translate(1010 220)">
+    <rect x="0" y="0" width="340" height="200" rx="28" fill="#0f2d45" opacity="0.85" />
+    <rect x="20" y="26" width="300" height="148" rx="24" fill="#0d3c5c" />
+    <g fill="none" stroke="#48f0ff" stroke-width="10" stroke-linecap="round">
+      <path d="M56 96h96" />
+      <path d="M56 126h96" />
+    </g>
+    <g transform="translate(190 68)" fill="#5dffbf">
+      <circle cx="0" cy="0" r="26" opacity="0.9" />
+      <circle cx="58" cy="0" r="26" opacity="0.6" />
+      <circle cx="29" cy="52" r="20" opacity="0.8" />
+    </g>
+  </g>
+  <g opacity="0.35" fill="#4fe0ff">
+    <circle cx="260" cy="220" r="30" />
+    <circle cx="360" cy="180" r="18" />
+    <circle cx="460" cy="240" r="24" />
+    <circle cx="560" cy="200" r="20" />
+  </g>
+  <g opacity="0.3" fill="#1dd0a5">
+    <circle cx="1240" cy="260" r="22" />
+    <circle cx="1340" cy="220" r="16" />
+    <circle cx="1440" cy="280" r="20" />
+  </g>
+</svg>
